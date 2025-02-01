@@ -1,0 +1,199 @@
+#gameboard {
+	background-color: #81C784;
+	width: 60%;
+	margin: auto;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#gameboard * {
+	font-family: 'Roboto Slab', serif;
+}
+
+#gameboard .input-box {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+#gameboard p {
+	font-size: 25px;
+}
+
+#gameboard button {
+	color: black;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20%;
+	font-size: 20px;
+}
+
+#start {
+	padding: 20px;
+}
+
+#startbutton {
+	font-size: 30px;
+}
+
+#finish {
+	font-size: 30px;
+	padding: 20px;
+}
+
+/* status */
+#status {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 35px;
+	font-weight: bold;
+	color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#status p {
+	float: right;
+	text-align: center;
+	line-height: 200%;
+}
+
+#status img {
+	float: left;
+	width: 50px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+/* images */
+#images {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#images img {
+	width: 98%;
+	height: 300px;
+	object-fit: fill;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5%;
+}
+
+/* input area */
+#inputboard {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 10px 10px 10px;
+	margin: auto;
+	border-radius: 4px;
+}
+
+#solution {
+	display: inline-flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+#letters {
+	display: inline-grid;
+	grid-template-rows: 1fr 1fr;
+	grid-auto-flow: column;
+	grid-gap: 10px;
+	margin: auto;
+}
+
+.input-box {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.letter {
+	background-color: dimgray;
+	border-color: #606060;
+}
+
+.letter:hover {
+	background-color: gray;
+}
+
+.input-box img {
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+}
+
+.wrong {
+	color: red;
+}
+
+#letters .empty {
+	visibility: hidden;
+}
+
+.letter-animation {
+	position: absolute;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.letter-animation:hover {
+	background-color: transparent;
+}
+
+.letter-animation:focus {
+	outline: none;
+}
+
+#solution div {
+	width: 0;
+}
+
+#bin {
+	position: absolute;
+	background-color: limegreen;
+	border-color: limegreen;
+	margin-left: 15px !important;
+}
+
+#bin:hover {
+	background-color: lime;
+}
+
+.tip {
+	position: absolute;
+	background-color: limegreen;
+	border-color: limegreen;
+	margin-left: 50px !important;
+}
+
+.locked {
+	color: greenyellow!important;
+}
+
+.tip:hover {
+	background-color: lime;
+}
+
+/* info panels */
+.info {
+	z-index: 2;
+	background-color: rgba(120, 120, 120, 0.9);
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 40%;
+	padding: 5%;
+	margin: 10px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+}

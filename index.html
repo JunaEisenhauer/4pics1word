@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4 Pics 1 Word</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+
+	<meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<!-- Site content -->
+
+<header class="box">
+	<h1 id="logo">4 Pics 1 Word</h1>
+	<nav>
+		<a id="words" href="index.html?words">Words</a>
+		<a id="nouns" href="index.html?nouns">Nouns</a>
+		<a id="verbs" href="index.html?verbs">Verbs</a>
+		<a id="adjectives" href="index.html?adjectives">Adjectives</a>
+	</nav>
+</header>
+
+<main>
+	<section id="gameboard" class="box">
+		<section id="start" class="hidden">
+			<button id="startbutton">Start</button>
+		</section>
+
+		<section id="game" class="hidden">
+			<section id="status">
+				<div id="level-container">
+					<img src="img/level.svg" alt="Level:">
+					<p id="level"></p>
+				</div>
+				<div id="coins-container">
+					<img src="img/coins.svg" alt="Coins:"/>
+					<p id="coins"></p>
+				</div>
+			</section>
+			<section id="images">
+				<img id="image0">
+				<img id="image1">
+				<img id="image2">
+				<img id="image3">
+			</section>
+			<section id="inputboard">
+				<section id="solution">
+					<div>
+						<button id="bin" class="input-box"><img src="img/bin.svg" alt="Del"/></button>
+						<button id="lettertip" class="input-box tip"><img src="img/tip.svg" alt="?"/></button>
+					</div>
+				</section>
+				<section id="letters">
+				</section>
+			</section>
+			<section id="levelup" class="info hidden">
+				<p>Correct!</p>
+				<div><p>Next Level: <strong id="nextlevel"></strong></p></div>
+				<button class="confirm">Continue</button>
+			</section>
+			<section id="nocoins" class="info hidden">
+				<p>You do not have enough coins!</p>
+				<button class="confirm">Ok</button>
+			</section>
+			<section id="uselettertip" class="info hidden">
+				<p>Do you want to receive a tip? (-10 coins)</p>
+				<button class="confirm">Ok</button>
+				<button class="abort">Cancel</button>
+			</section>
+		</section>
+
+		<section id="finish" class="hidden">
+			<p>You solved it!</p>
+		</section>
+	</section>
+</main>
+
+<footer>
+	<p>by Juna Eisenhauer</p>
+	<small>AI Web-Programming</small>
+	<br><small>Quiz project</small>
+</footer>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/game.js"></script>
+<script src="js/word.js"></script>
+</body>
+</html>
